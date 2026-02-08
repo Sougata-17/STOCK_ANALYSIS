@@ -20,4 +20,30 @@ technical, fundamental, and sentiment analysis on stocks with contextual memory.
 ---
 
 ## 🧠 System Architecture
+PROJECT/
+│
+├── app.py                  # Streamlit UI
+├── main.py                 # Application orchestration layer
+├── requirements.txt
+├── .env
+│
+├── agents/
+│   ├── __init__.py
+│   └── stock_agent.py      # Core GenAI stock agent
+│
+├── tools/
+│   ├── data_fetcher.py     # Stock data retrieval
+│   ├── technical_analysis.py
+│   ├── fundamental_analysis.py
+│   └── news_analysis.py
+│
+├── models/
+│   └── llm.py              # Groq LLM wrapper
+│
+├── memory/
+│   └── conversation_memory.py
+│
+└── config/
+    ├── prompts.py
+    └── settings.py
 
